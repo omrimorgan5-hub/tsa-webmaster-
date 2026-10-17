@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethical AI Use — NeuraLearn</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="../index.html">NeuraLearn</a>
+      <div class="nav-links">
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="tools.html">AI Tools</a>
+        <a href="ethics.html">Ethics</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← Back to dashboard</a>
+    <section class="hero" style="padding-top:1rem">
+      <h1>Module 3: Ethical AI Use</h1>
+      <p>Powerful tools come with real responsibilities. Here's how to use AI well.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Bias in, bias out</h2>
+      <p>AI learns from human-created data, so it can absorb human biases. Hiring tools have downgraded résumés with women's names; image generators have stereotyped professions by gender and race. The takeaway: <strong>AI output reflects its training data — question it, especially when it affects people.</strong></p>
+    </section>
+
+    <section class="lesson">
+      <h2>Privacy: what you type can be kept</h2>
+      <p>Anything you paste into an AI tool — personal details, photos, school documents — may be stored and even used for training. Rule of thumb: <strong>never share anything with an AI chatbot that you wouldn't post publicly</strong>, and check the tool's privacy settings.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Academic integrity</h2>
+      <p>Submitting AI-written work as your own is plagiarism at most schools, and AI detectors (imperfect as they are) are widely used. Beyond the rules, there's a practical cost: outsourcing your thinking means skipping the learning. Use AI to <strong>understand more deeply</strong>, not to bypass the work.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Misinformation &amp; deepfakes</h2>
+      <p>AI can generate convincing fake images, audio, and video. Before sharing something surprising: check the source, look for corroboration from trusted outlets, and be extra skeptical of emotional content — outrage is the easiest thing to manufacture. When you create AI content yourself, <strong>label it as AI-generated</strong>.</p>
+    </section>
+
+    <section class="quiz" id="quiz">
+      <h2>Check your understanding</h2>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>NeuraLearn — built for the TSA Webmaster competition.</p></footer>
+
+  <script src="../js/app.js"></script>
+  <script>
+    initQuiz("ethics", [
+      { q: "Why can AI systems be biased?",
+        choices: ["Programmers intentionally make them biased", "They learn patterns from human-created data that contains biases", "Biased hardware", "They are too new to be tested"],
+        answer: 1 },
+      { q: "What is a safe privacy rule for AI chatbots?",
+        choices: ["Share anything; it's all encrypted", "Never share anything you wouldn't post publicly", "Only share photos, not text", "Privacy settings don't matter"],
+        answer: 1 },
+      { q: "Why is submitting AI-written work as your own a problem?",
+        choices: ["It's only a problem if you get caught", "It's plagiarism, and it skips the actual learning", "AI writing is always bad", "Teachers can't tell anyway"],
+        answer: 1 },
+      { q: "Before sharing a surprising AI-generated image, you should…",
+        choices: ["Share it immediately so friends see it first", "Check the source and look for corroboration", "Assume it's real if it looks real", "Add a funny caption"],
+        answer: 1 }
+    ]);
+  </script>
+</body>
+</html>
