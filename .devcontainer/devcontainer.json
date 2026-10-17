@@ -1,0 +1,1 @@
+{"customizations":{"vscode":{"extensions":["ritwickdey.LiveServer"]}},"forwardPorts":[8080],"image":"mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm","name":"TSA Webmaster — AI Learning Portal","portsAttributes":{"8080":{"label":"NeuraLearn preview","onAutoForward":"openPreview"}},"postCreateCommand":"npm install -g http-server"}
