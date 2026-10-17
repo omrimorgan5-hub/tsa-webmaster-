@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Fundamentals — NeuraLearn</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="../index.html">NeuraLearn</a>
+      <div class="nav-links">
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="tools.html">AI Tools</a>
+        <a href="ethics.html">Ethics</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← Back to dashboard</a>
+    <section class="hero" style="padding-top:1rem">
+      <h1>Module 1: AI Fundamentals</h1>
+      <p>What artificial intelligence actually is — and what it isn't.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>What is AI?</h2>
+      <p>Artificial intelligence is software that performs tasks which normally require human intelligence: recognizing images, understanding language, or making predictions. A useful way to think about it: <strong>AI finds patterns in data and uses them to make decisions about new data.</strong> It doesn't "understand" the way you do — it computes probabilities.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Machine learning: learning from examples</h2>
+      <p>Instead of a programmer writing explicit rules ("if the email contains the word 'lottery', mark it spam"), machine learning feeds the computer thousands of examples and lets it discover the rules itself. The three main flavors:</p>
+      <ul>
+        <li><strong>Supervised learning</strong> — learns from labeled examples (photos tagged "cat" or "dog").</li>
+        <li><strong>Unsupervised learning</strong> — finds hidden groups in unlabeled data (customer segments).</li>
+        <li><strong>Reinforcement learning</strong> — learns by trial and error with rewards (game-playing AI).</li>
+      </ul>
+    </section>
+
+    <section class="lesson">
+      <h2>Neural networks &amp; deep learning</h2>
+      <p>A neural network is layers of simple math units ("neurons") that transform inputs into outputs. Stack many layers and you get <strong>deep learning</strong> — the technique behind image recognition, voice assistants, and today's chatbots. Training means adjusting millions of tiny knobs (weights) until the network's guesses match the training data.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Generative AI &amp; large language models</h2>
+      <p>Large language models (LLMs) like the chatbots you've used are trained to <strong>predict the next word</strong> in a sequence, over trillions of words. That simple objective, at massive scale, produces surprisingly capable behavior: writing, summarizing, coding, translating. But prediction is not the same as truth — LLMs can confidently produce wrong answers ("hallucinations"), which is why verifying matters.</p>
+    </section>
+
+    <section class="quiz" id="quiz">
+      <h2>Check your understanding</h2>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>NeuraLearn — built for the TSA Webmaster competition.</p></footer>
+
+  <script src="../js/app.js"></script>
+  <script>
+    initQuiz("fundamentals", [
+      { q: "At its core, what does an AI system do?",
+        choices: ["Follows hand-written rules for every situation", "Finds patterns in data to make decisions about new data", "Thinks and feels exactly like a human", "Only works when connected to the internet"],
+        answer: 1 },
+      { q: "Which type of machine learning uses labeled examples?",
+        choices: ["Unsupervised learning", "Reinforcement learning", "Supervised learning", "Deep dreaming"],
+        answer: 2 },
+      { q: "What happens during neural network training?",
+        choices: ["Programmers write millions of if-statements", "Millions of weights are adjusted so guesses match training data", "The network memorizes the entire internet", "Neurons grow like brain cells"],
+        answer: 1 },
+      { q: "Large language models are fundamentally trained to…",
+        choices: ["Understand the true meaning of language", "Predict the next word in a sequence", "Browse the live web for answers", "Run code without errors"],
+        answer: 1 }
+    ]);
+  </script>
+</body>
+</html>
