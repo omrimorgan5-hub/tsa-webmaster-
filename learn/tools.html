@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical AI Tools — NeuraLearn</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="../index.html">NeuraLearn</a>
+      <div class="nav-links">
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="tools.html">AI Tools</a>
+        <a href="ethics.html">Ethics</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← Back to dashboard</a>
+    <section class="hero" style="padding-top:1rem">
+      <h1>Module 2: Practical AI Tools</h1>
+      <p>Techniques for getting genuinely useful results from AI — especially for school.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Prompting: give the AI a good brief</h2>
+      <p>A prompt is an instruction, and vague instructions get vague results. Strong prompts include:</p>
+      <ul>
+        <li><strong>Role:</strong> "Act as a patient geometry tutor…"</li>
+        <li><strong>Context:</strong> "I'm in 10th grade and we're studying quadratic equations…"</li>
+        <li><strong>Format:</strong> "Explain in 3 bullet points, then give one practice problem."</li>
+        <li><strong>Constraints:</strong> "Don't just give the answer — walk me through the steps."</li>
+      </ul>
+    </section>
+
+    <section class="lesson">
+      <h2>Tools worth knowing</h2>
+      <ul>
+        <li><strong>Chatbots / LLMs</strong> — brainstorming, explaining hard concepts, drafting outlines.</li>
+        <li><strong>AI search &amp; research assistants</strong> — summarizing sources with citations you can check.</li>
+        <li><strong>Code assistants</strong> — autocompleting code, explaining errors, generating boilerplate.</li>
+        <li><strong>Image &amp; audio generators</strong> — visuals for presentations and creative projects.</li>
+        <li><strong>Study helpers</strong> — turning your notes into flashcards or practice quizzes.</li>
+      </ul>
+    </section>
+
+    <section class="lesson">
+      <h2>Using AI for schoolwork — the smart way</h2>
+      <p>Use AI as a <strong>tutor, not a ghostwriter</strong>. Good patterns: ask it to quiz you, explain a concept three different ways, critique your draft essay, or generate practice problems. Bad pattern: pasting in the assignment and submitting the output. The first builds understanding; the second builds nothing — and most schools now treat it as academic dishonesty.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>Verify everything important</h2>
+      <p>AI tools hallucinate: fake citations, wrong dates, plausible-but-false facts. Treat AI output as a <strong>first draft</strong>: cross-check facts against reliable sources, and never cite something you haven't verified yourself.</p>
+    </section>
+
+    <section class="quiz" id="quiz">
+      <h2>Check your understanding</h2>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>NeuraLearn — built for the TSA Webmaster competition.</p></footer>
+
+  <script src="../js/app.js"></script>
+  <script>
+    initQuiz("tools", [
+      { q: "Which of these makes a prompt stronger?",
+        choices: ["Making it as short as possible", "Adding role, context, format, and constraints", "Using ALL CAPS for emphasis", "Asking multiple unrelated questions at once"],
+        answer: 1 },
+      { q: "What is the smartest way to use AI for schoolwork?",
+        choices: ["Have it write the whole assignment", "Use it as a tutor: explanations, quizzes, feedback on your draft", "Copy its output without reading it", "Use it only the night before it's due"],
+        answer: 1 },
+      { q: "Why should you verify AI-generated facts?",
+        choices: ["AI is always wrong", "AI can hallucinate plausible-but-false information", "Teachers dislike AI", "Verification makes answers longer"],
+        answer: 1 },
+      { q: "A good prompt for studying geometry would be…",
+        choices: ["\"geometry help\"", "\"Act as a geometry tutor. I'm in 10th grade studying quadratics — walk me through one practice problem step by step.\"", "\"Just give me the answers\"", "\"Write my homework\""],
+        answer: 1 }
+    ]);
+  </script>
+</body>
+</html>
